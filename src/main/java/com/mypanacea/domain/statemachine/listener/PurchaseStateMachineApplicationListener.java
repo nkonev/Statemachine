@@ -12,7 +12,7 @@ import org.springframework.statemachine.transition.Transition;
 public class PurchaseStateMachineApplicationListener implements StateMachineListener<PurchaseState, PurchaseEvent> {
     @Override
     public void stateChanged(final State<PurchaseState, PurchaseEvent> from, final State<PurchaseState, PurchaseEvent> to) {
-        if (from.getId() != null) {
+        if (from != null && from.getId() != null) {
             System.out.println("Переход из статуса " + from.getId() + " в статус " + to.getId());
         }
     }
