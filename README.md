@@ -18,3 +18,6 @@ Machine started
 ...
 Резервирование товара 2 отменено
 ```
+
+# Links
+https://habr.com/ru/post/462371/
